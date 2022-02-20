@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload='document.form1.text1.focus()'>
+    <section>
+        <div class="holder">
+            <img src="images/card.jpg" alt="">
+            <p class="tt">Credit Card Details</p>
+            <form id="myform" name="Form1">
+                <label>Card Number</label><br><br>
+                <input id="use" placeholder="Enter Your Card Numbr Here" name="CreditCard" type="text" value=""> <br>
+                <button type="button" name="Button"  value="TEST CARD NUMBER" onClick="return Mod10(document.Form1.CreditCard.value);">Validate</button>
+            </form>
+           
+            <p>List of Valid Credit Card</p>
+            <span id="post"></span>
+        </div>
+    </section>
+</body>
+
+</html>
