@@ -70,11 +70,12 @@ function Mod10(ccNumb) {  // v2.0
     // Change alert to on-page display or other indication as needed.
     if (bResult) {
     //   alert("This IS a valid Credit Card Number!");
-        document.getElementById("post").innerHTML=(bNum)
+        document.getElementById("post").innerHTML= 'Your Card is a Valid Card'
     }
     if (!bResult) {
     //   alert("This is NOT a valid Credit Card Number!");
-        document.getElementById("post").innerHTML=bResult
+        document.getElementById("post").innerHTML= 'Your Card is not a vaild card'
+      
     }
     return bResult; // Return the results
   }
